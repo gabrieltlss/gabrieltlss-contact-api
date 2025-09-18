@@ -10,5 +10,5 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(router);
 
-const PORT = process.env.PORT;
-app.listen(PORT, () => console.log(`Initialized in http://localhost:3000`));
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => console.log(`Server initialized.`));
