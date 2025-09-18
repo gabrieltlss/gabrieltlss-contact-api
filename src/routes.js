@@ -33,8 +33,8 @@ router.post("/contact", async (req, res) => {
     }
 
     const msg = {
-        to: "gabrieltlssimoes@gmail.com",
-        from: 'gabrieltlssimoes@gmail.com',
+        to: process.env.EMAIL,
+        from: process.env.EMAIL,
         replyTo: email,
         subject: 'Contato - Gabriel Teles',
         text: `Nome: ${cleanName}\nMessage: ${message}`,
