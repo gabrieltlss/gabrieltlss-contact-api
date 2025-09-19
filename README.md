@@ -25,16 +25,18 @@ O projeto possui uma única rota que recebe nome, email e mensagem para contato.
 
 /contact - método POST. 
 
-Se executado localmente, a rota será algo como "http://localhost:3000".
+Exemplo de rota em servidor local: "http://localhost:3000/contact".
 
 Recebe:
 
 {
+
   "name": "Gabriel",
 
   "email": "exemplo@email.com",
 
   "message": "Olá, esta é uma mensagem de teste."
+
 }
 
 ## Deploy / URL
