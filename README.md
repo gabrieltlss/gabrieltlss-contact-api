@@ -14,7 +14,7 @@ npm install
 
 npm run start
 
-- Variáveis de ambientes necessárias
+- Variáveis de ambientes
     - SEND_GRID_API
     - PORT (geralmente 3000, se projeto for executado localmente)
     - EMAIL (opcional; e-mail pode ser informado diretamente no objeto de mensagem)
@@ -47,7 +47,7 @@ A API foi gerada pelo Render, que hospeda este back-end.
 
 ## Tecnologias utilizadas
 
-JavaScricpt, Node.js, Express, SendGrid e Render para hospedagem do back-end.
+JavaScript, Node.js, Express e SendGrid.
 
 ## Licença
 
