@@ -2,7 +2,7 @@
 
 ## Descrição
 
-API para contato contruída com Node.js e Express com mensagens enviados com o SendGrid.
+API para contato construída com Node.js e Express, que envia mensagens via SendGrid.
 
 ## Instalação e uso
 
