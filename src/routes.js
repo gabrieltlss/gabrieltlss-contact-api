@@ -50,4 +50,8 @@ router.post("/contact", async (req, res) => {
     }
 });
 
+router.get("/health", (req, res) => {
+    res.status(200).json({ status: "ok" });
+});
+
 export { router };
