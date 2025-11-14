@@ -2,7 +2,7 @@
 
 ## Descrição
 
-API para contato contruída com Node.js e Express com mensagens enviados com o SendGrid.
+API para contato construída com Node.js e Express, que envia mensagens via SendGrid.
 
 ## Instalação e uso
 
@@ -14,7 +14,7 @@ npm install
 
 npm run start
 
-- Variáveis de ambientes necessárias
+- Variáveis de ambientes
     - SEND_GRID_API
     - PORT (geralmente 3000, se projeto for executado localmente)
     - EMAIL (opcional; e-mail pode ser informado diretamente no objeto de mensagem)
