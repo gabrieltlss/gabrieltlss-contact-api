@@ -1,13 +1,13 @@
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 dotenv.config();
-import { Router } from "express";
-import sgMail from "@sendgrid/mail";
+const { Router } = require("express");
+const sgMail = require("@sendgrid/mail");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const router = Router();
 
-router.post("/contact", async (req, res) => {
+router.post("/", async (req, res) => {
     const { name, email, message } = req.body;
 
     const cleanName = name.trim().replace(/\s+/g, " ");
@@ -54,4 +54,4 @@ router.get("/health", (req, res) => {
     res.status(200).json({ status: "ok" });
 });
 
-export { router };
+module.exports = router;
