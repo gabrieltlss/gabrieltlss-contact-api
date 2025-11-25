@@ -12,6 +12,5 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(router);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server initialized.`));
-console.log("Server iniciado");
+console.log("Server iniciado.");
+module.exports = app;
