@@ -7,7 +7,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const router = Router();
 
-router.post("/enviar", async (req, res) => {
+router.post("/send", async (req, res) => {
     const { name, email, message } = req.body;
 
     const cleanName = name.trim().replace(/\s+/g, " ");
