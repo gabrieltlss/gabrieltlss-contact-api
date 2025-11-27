@@ -7,7 +7,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const router = Router();
 
-router.post("/send", async (req, res) => {
+router.post("/", async (req, res) => {
     const { name, email, message } = req.body;
 
     const cleanName = name.trim().replace(/\s+/g, " ");
@@ -50,7 +50,7 @@ router.post("/send", async (req, res) => {
     }
 });
 
-router.get("/health", (req, res) => {
+router.get("/test", (req, res) => {
     res.status(200).json({ status: "ok" });
 });
 
